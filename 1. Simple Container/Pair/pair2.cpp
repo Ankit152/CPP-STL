@@ -6,40 +6,40 @@ int main()
 {
     int n;// number of elements of the arrays
     
-    cout<<"Enter the number of elements of the array---";
+    cout<<"Enter the number of elements of the pair---\n";
     cin>>n;
     
-    cout<<"Enter the two arrays";
     
-    int ar[n];char ch[n];// one integer array and one character array
+    
+    cout<<"Enter the two arrays as pair---\n";
+    
+    
+    
+    
     
     pair<int,char> final[n];//the pair where the array elements will be stored
     
     for(int i=0;i<n;i++)
     {
-        cin>>ar[i];
+        cin>>final[i].first;//first series of elements taken input
         
-        final[i].first=ar[i];//assigning values to the pair
+        
     }
     
     for(int i=0;i<n;i++)
     {
-        cin>>ch[i];
+        cin>>final[i].second; //first series of elements taken input
         
-        final[i].second=ch[i];//assigning values to the pair
+        
     }
     
     sort(final,final+n); //sorting the second array according to the first one 
     
-    //printing the sorted array
+    //printing the sorted pair
     
     //the second array is sorted according to the first
-    cout<<"\n";
     
-    for(int i=0;i<n;i++)
-    {
-        cout<<final[i].first<<" ";
-    }
+    
     
     cout<<"\n"; //breaking one line 
     
